@@ -1,6 +1,6 @@
 :root {
-    --background: rgb(224, 234, 247);
-    --header-background: rgb(254, 251, 245);
+    --background: rgb(255, 255, 255);
+    --header-background: rgb(255, 255, 255);
     --primary-font: Corbel, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans',
         'Bitstream Vera Sans', 'Liberation Sans', Verdana, 'Verdana Ref', sans-serif;
 }
@@ -13,22 +13,10 @@ body {
 }
 
 header {
-    position: sticky;
-    top: 0;
-    padding: 15px;
-    height: 80px;
-
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    background-color: var(--header-background);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    background-color: rgb(0, 255, 76);
+    text-align: center;
 }
 
-header .logo {
-    height: 100%;
-}
 
 main {
     padding: 20px;
