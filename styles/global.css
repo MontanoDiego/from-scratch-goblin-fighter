@@ -10,7 +10,7 @@ body {
     background: var(--background);
     display: grid;
     grid-template-rows: auto 1fr;
-    background-image: url('./assets/background.jpg');
+    background-image: url('../assets/background.jpg');
 }
 
 header {
@@ -39,9 +39,74 @@ main {
 }
 
 .kills {
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+    display: inline;
     text-align: center;
+}
+
+.kills span {
+    font-size: larger;
+    color:rgb(255, 0, 0);
 }
 
 .hunter {
     text-align: center;
+}
+
+.hunter h2 {
+    background-color: rgb(255, 0, 0);
+    align-items: center;
+}
+
+.amygdala-stats {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: whitesmoke;
+    font-size: 3rem;
+    text-align: center;
+    display: inline;
+}
+
+#input-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.amygdala-stats input {
+    font-size: 2rem;
+    width: 80%;
+}
+
+.amygdala-stats button {
+    font-size: 1em;
+}
+
+.amygdala {
+    cursor: crosshair;
+    border: solid 10px rgb(43, 0, 0);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: rgb(71, 71, 71);
+    font-size: 3rem;
+}
+
+.amygdala p {
+    padding-right: 30px;
+    padding-left: 30px;
 }
