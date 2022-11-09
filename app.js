@@ -65,10 +65,10 @@ function amygdalaClickHandler(amygdalaData) {
         alert('you swung at ' + amygdalaData.name + ' but missed!');
     }
 
-    if (Math.random() < 0.44) {
+    if (Math.random() < 0.35) {
         hunterVitality--;
         alert(amygdalaData.name + ' swiped and gashed you!');
-    } else if (Math.random() < 0.22) {
+    } else if (Math.random() < 0.11) {
         hunterVitality--;
         hunterVitality--;
         hunterVitality--;
@@ -77,8 +77,12 @@ function amygdalaClickHandler(amygdalaData) {
         alert(amygdalaData.name + ' clawed at you, but missed!');
     }
 
-    if (amygdalaData.vit === 0) {
+    if (amygdalaData.vit <= 0) {
         amygdalasSlain++;
+        alert('You slayed ' + amygdalaData.name + ' and consumed the old blood!');
+        hunterVitality++;
+        hunterVitality++;
+        hunterVitality++;
     }
     
     if (hunterVitality <= 0) {
@@ -94,6 +98,18 @@ function amygdalaClickHandler(amygdalaData) {
         hunterImageEl.classList.add('hunterDeath');
         title.textContent = 'GAME OVER!';
         resetButton.classList.remove('hide');
+    }
+
+    if (amygdalasSlain >= 3) {
+        alert('You have consumed enough old blood to gain strength!');
+        if (amygdalaData.vit <= 3) {
+            alert('The old blood empowers you and you instantly consume ' + amygdalaData.name);
+            amygdalaData.vit = 0;
+            hunterVitality++;
+            hunterVitality++;
+            hunterVitality++;
+            amygdalasSlain++;
+        }
     }
 
 
