@@ -110,3 +110,19 @@ label {
     padding-right: 30px;
     padding-left: 30px;
 }
+
+.amygdalaImgAlive {
+    background-color: black;
+    background-image: url(/assets/Amygdala.jpg);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.amygdalaImgDead {
+    background-color: black;
+    background-image: url(/assets/Amygdala-dead.jpg);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
