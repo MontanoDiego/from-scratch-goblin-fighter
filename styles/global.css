@@ -19,6 +19,7 @@ header {
 }
 
 .title {
+    text-align: center;
     color: rgb(255, 0, 0);
 }
 
@@ -125,4 +126,26 @@ label {
     background-size: cover;
     width: 100px;
     height: 100px;
+}
+
+.hide {
+    display: none;
+}
+
+.hunterDeath {
+    margin-left: 55rem;
+    margin-bottom: 50rem;
+    display: flex;
+    align-items: center;
+    border: solid 30px rgb(43, 0, 0);
+    border-radius: 50px;
+}
+
+#resetButton {
+    color: black;
+    cursor: pointer;
+    border: solid 10px black;
+    border-radius: 100px;
+    font-size: larger;
+    background-color: rgb(255, 0, 0);
 }

@@ -11,7 +11,7 @@ export function amygdalaRender(amygdalaData) {
     vitEl.id = `amygdala-vitality-${amygdalaData.id}`; // !IMPORTANT
     vitEl.textContent = amygdalaData.vit;
 
-    if (amygdalaData.vit < 0) {
+    if (amygdalaData.vit <= 0) {
         imgEl.classList.remove('amygdalaImgAlive');
         imgEl.classList.add('amygdalaImgDead');
     }
