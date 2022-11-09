@@ -68,7 +68,7 @@ main {
     align-items: center;
 }
 
-form {
+.input-class {
     display: flex;
     flex-direction: column;
 }

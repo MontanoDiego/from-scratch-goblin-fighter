@@ -1,3 +1,3 @@
-export function goblinRender() {
-    console.log('goblin render called');
-}
+// export function amygdalaRender() {
+//     console.log('goblin render called');
+// }
