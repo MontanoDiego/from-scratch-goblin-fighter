@@ -1,6 +1,6 @@
 :root {
-    --background: rgb(224, 234, 247);
-    --header-background: rgb(254, 251, 245);
+    --background: rgb(71, 71, 71);
+    --header-background: rgb(255, 255, 255);
     --primary-font: Corbel, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans',
         'Bitstream Vera Sans', 'Liberation Sans', Verdana, 'Verdana Ref', sans-serif;
 }
@@ -10,26 +10,142 @@ body {
     background: var(--background);
     display: grid;
     grid-template-rows: auto 1fr;
+    background-image: url('../assets/background.jpg');
 }
 
 header {
-    position: sticky;
-    top: 0;
-    padding: 15px;
-    height: 80px;
-
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    background-color: var(--header-background);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    background-color: rgb(43, 0, 0);
+    text-align: center;
 }
 
-header .logo {
-    height: 100%;
+.title {
+    text-align: center;
+    color: rgb(255, 0, 0);
 }
+
 
 main {
+    display: flex;
+    flex-direction: row;
     padding: 20px;
+}
+
+.slayer-stats {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.kills {
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+    display: inline;
+    text-align: center;
+}
+
+.kills span {
+    font-size: larger;
+    color:rgb(255, 0, 0);
+}
+
+.hunter {
+    text-align: center;
+}
+
+.hunter h2 {
+    background-color: rgb(255, 0, 0);
+    align-items: center;
+}
+
+.amygdala-stats {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-class {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: whitesmoke;
+    font-size: 3rem;
+    text-align: center;
+    display: inline;
+}
+
+#input-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.amygdala-stats input {
+    font-size: 2rem;
+    width: 80%;
+}
+
+.amygdala-stats button {
+    font-size: 1em;
+}
+
+.amygdala {
+    cursor: crosshair;
+    border: solid 10px rgb(43, 0, 0);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: rgb(71, 71, 71);
+    font-size: 3rem;
+}
+
+.amygdala p {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.amygdalaImgAlive {
+    background-color: black;
+    background-image: url(/assets/Amygdala.jpg);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.amygdalaImgDead {
+    background-color: black;
+    background-image: url(/assets/Amygdala-dead.jpg);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.hide {
+    display: none;
+}
+
+.hunterDeath {
+    margin-left: 55rem;
+    margin-bottom: 50rem;
+    display: flex;
+    align-items: center;
+    border: solid 30px rgb(43, 0, 0);
+    border-radius: 50px;
+}
+
+#resetButton {
+    color: black;
+    cursor: pointer;
+    border: solid 10px black;
+    border-radius: 100px;
+    font-size: larger;
+    background-color: rgb(255, 0, 0);
 }

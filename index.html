@@ -26,12 +26,43 @@
 
 <body>
     <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
+        <h1 id="title" class="title"> AMYGDALA SLAYER </h1>
+        <button id="resetButton" class="hide">SLAY AGAIN</button>
     </header>
 
     <main>
-
+        <div class="slayer-stats">
+            <div class="kills">
+                <h2 id="header"> <span id="amygdalas-slayed">0</span> AMYGDALAS SLAIN </h2>
+            </div>
+            <div class="hunter">
+                <h2 id="vitality-head">VITALITY: <span id="vitality">10</span> </h2>
+                <img id="old-hunter" src="./assets/old-hunter.png" alt="old hunter in tattered clothes">
+            </div>
+        </div>
+        <div class="amygdala-stats">
+            <div>
+                <div class="input-class">
+                    <label id="label" for="amygdala-name-input"> NEW FOE: </label>
+                    <div id="input-div">
+                        <input id="amygdala-name-input" placeholder="Enter Summoning Name..." type="text">
+                        <button id="name-btn" type="submit"> ADD FOE </button>
+                    </div>
+                </div>
+                <div class="amygdalas">
+                    <div class="amygdala">
+                        <p id="amygdala-name">ORPHEUS</p>
+                        <img class="amygdalaImgAlive">
+                        <p id="amygdala-vitality">5</p>
+                    </div>
+                    <div class="amygdala">
+                        <p id="amygdala-name">SISYPHUS</p>
+                        <img class="amygdalaImgAlive">
+                        <p id="amygdala-vitality">4</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
 </body>
