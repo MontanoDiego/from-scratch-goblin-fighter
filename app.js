@@ -30,6 +30,8 @@ nameInputBtn.addEventListener('click', () => {
         name: `${amygdalaName}`,
         vit: vitality,
     };
+    // increment ID
+    idAggregator++;
     // push to object array
     amygdalas.push(newAmygdala);
     // reset
@@ -46,13 +48,15 @@ function displayAmygdala() {
     for (let amygdala of amygdalas) {
         const amygdalaEl = amygdalaRender(amygdala);
 
-        amygdalaEl.addEventListener('click', () => {
-            // NEED CLICK HANDLER
-            console.log('yeah');
+        amygdalaEl.addEventListener('click', (amygdalaData) => {
+            console.log('click!');
         });
+
+        amygdalaListEl.append(amygdalaEl);
     }
 }
 
 
 // (don't forget to call any display functions you want to run on page load!)
 
+displayAmygdala();
